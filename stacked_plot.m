@@ -1,5 +1,4 @@
 function stacked_plot(input,tar)
-figure
 name_seq = cell(1,length(tar));
 hold on 
 for i = 1: length(tar)

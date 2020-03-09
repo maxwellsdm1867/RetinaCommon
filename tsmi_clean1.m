@@ -82,7 +82,7 @@
                     temp2=[];
                     for j=1:length(px)
                         for k=1:length(py)
-                            temp2(k,j)=pxy(k,j)*log( pxy(k,j)/ (py(k)*px(j)) )/log(2)/(bin/1000);
+                            temp2(k,j)=pxy(k,j)*log( pxy(k,j)/ (py(k)*px(j)) )/log(2);
                         end
                     end
                     temp=temp-1;
@@ -103,7 +103,7 @@
                     temp2=[];
                     for j=1:length(px)
                         for k=1:length(py)
-                            temp2(k,j)=pxy(k,j)*log( pxy(k,j)/ (py(k)*px(j)) )/log(2)/(bin/1000);
+                            temp2(k,j)=pxy(k,j)*log( pxy(k,j)/ (py(k)*px(j)) )/log(2);
                         end
                     end
                     temp=temp+1;
