@@ -24,9 +24,9 @@ if res>0.8
 elseif res<-0.8
     type_idx = 2;%off cell
 elseif res<0.8 & res>-0.8 & r==1
-    type_idx = 3; %on off cell
+    type_idx = 3; %Trainsient
 elseif res<0.8 & res>-0.8 & r==-1
-    type_idx = 4;%off on cell
+    type_idx = 4;%Trainsient
 else
     type_idx=5;%unindentify
 end
