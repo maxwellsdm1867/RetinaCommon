@@ -25,7 +25,7 @@ else
         x = Neurons((i-1)+forward+1:length(Neurons)-backward+(i-1))';
         y = isi2(forward+1:length(isi2)-backward)';
         dat{i}=[x,y];
-        [N,C]=hist3(dat{i},'Edges',{0:1:8 sort(unique(isi2))}); %20:dividing firing rate  6:# of stim
+        [N,C]=hist3(dat{i},'Edges',{0:1:max(Neurons) sort(unique(isi2))}); %20:dividing firing rate  6:# of stim
         px=sum(N,1)/sum(sum(N)); % x:stim
         py=sum(N,2)/sum(sum(N)); % y:word
         pxy=N/sum(sum(N));
@@ -44,7 +44,6 @@ else
         x = Neurons(forward+1-i:length(Neurons)-backward-i)';
         y = isi2(forward+1:length(isi2)-backward)';
         dat{i}=[x,y];
-        
         [N,C]=hist3(dat{i},'Edges',{0:1:max(Neurons) sort(unique(isi2))}); %20:dividing firing rate  6:# of stim
         px=sum(N,1)/sum(sum(N)); % x:stim
         py=sum(N,2)/sum(sum(N)); % y:word
