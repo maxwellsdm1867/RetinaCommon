@@ -1,5 +1,4 @@
 function isi2 = sort_state(states,stim)
-states = 12;
 X =stim;
 nX = sort(X);
 abin = length(nX)/states;
